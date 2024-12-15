@@ -32,4 +32,5 @@ if is_menber:
         print("Acceso denegado eres menor de 15")
 else:
     print("No eres miembro fuera!")
-
+ 
+# Crear juego de piedra papel o tijeras
