@@ -1,5 +1,6 @@
 from enum import Enum
 from collections import deque
+from collections import Counter
 
 class DeliveryStatus(Enum):
     PENDING = 1      # Pendiente
@@ -42,6 +43,15 @@ class OrderManagement:
             self.queue.remove(item)
         else:
             return f"Item '{item}' not found in the queue."
+    
+    def count_all_products(self):
+        """Devuelve un diccionario con el conteo de todos los productos."""
+        return Counter(self.queue)
+
+    def count_specific_product(self, item):
+        """Devuelve el conteo de un producto específico."""
+        counts = Counter(self.queue)
+        return counts[item]
 
 
     @staticmethod
