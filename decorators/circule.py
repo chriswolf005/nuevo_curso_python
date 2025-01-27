@@ -23,5 +23,5 @@ print(circle.radius)
 
 circle.radius=10
 print(circle.area)
-circle.radius=-1
-print(circle.area)
+#circle.radius=-1
+#print(circle.area)
